@@ -1,5 +1,7 @@
-Create New Swift Playground
-===========================
+LaunchBar Actions
+=================
+
+# Create New Swift Playground
 
 Oftentimes, I just want to try something out in a clean Playground, but switching to Xcode, creating a new Playground and (most importantly) then deciding how to name it and where to save it is just no fun for me.
 
