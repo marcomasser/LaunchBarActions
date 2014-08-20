@@ -4,24 +4,33 @@ import Cocoa
 
 
 func getEnvironment(name: String) -> String {
-    if let environment = NSProcessInfo.processInfo().environment as NSDictionary? {
-        if let result = environment[name] as? String {
-            return result
+    let environment = NSProcessInfo.processInfo().environment
+    if let result: AnyObject = environment[name] {
+        // This cast is broken in Xcode 6 Beta 6. radar://18075120
+        if let resultString = result as? String {
+            return resultString
+        } else {
+            NSLog("Value for environment variable \(name) is not a String")
         }
+    } else {
+        NSLog("No value for environment variable \(name)")
     }
 
-    NSLog("Could not get value for environment: \(name)")
     exit(1)
 }
 
 func getTemplatePath() -> String {
     let actionBundle = NSBundle(path:getEnvironment("LB_ACTION_PATH"))
-    let templatePath = actionBundle.pathForResource("Template", ofType:"playground")
-    if NSFileManager.defaultManager().fileExistsAtPath(templatePath) {
-        return templatePath
+    let maybeTemplatePath = actionBundle.pathForResource("Template", ofType:"playground")
+    if let templatePath = maybeTemplatePath {
+        if NSFileManager.defaultManager().fileExistsAtPath(templatePath) {
+            return templatePath
+        }
+        NSLog("Template file doesn't exist: \(templatePath)")
+    } else {
+        NSLog("Template.playground not found in action's bundle")
     }
 
-    NSLog("Template file doesn't exist: \(templatePath)")
     exit(1)
 }
 
@@ -29,8 +38,8 @@ func getDestinationDirectory() -> String {
     let preferencesPath = getEnvironment("LB_SUPPORT_PATH").stringByAppendingPathComponent("preferences.plist")
     if !NSFileManager.defaultManager().fileExistsAtPath(preferencesPath) {
         let documentDirectories = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        if var result = documentDirectories.first as? String {
-            result = result.stringByAbbreviatingWithTildeInPath()
+        if var result = documentDirectories.first as? NSString {
+            result = result.stringByAbbreviatingWithTildeInPath
             (["destinationDirectory": result] as NSDictionary).writeToFile(preferencesPath, atomically: true)
         }
     }
