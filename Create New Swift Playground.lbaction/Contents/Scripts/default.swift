@@ -6,7 +6,6 @@ import Cocoa
 func getEnvironment(name: String) -> String {
     let environment = NSProcessInfo.processInfo().environment
     if let result: AnyObject = environment[name] {
-        // This cast is broken in Xcode 6 Beta 6. radar://18075120
         if let resultString = result as? String {
             return resultString
         } else {
