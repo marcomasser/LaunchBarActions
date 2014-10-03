@@ -20,14 +20,18 @@ func getEnvironment(name: String) -> String {
 
 func getTemplatePath() -> String {
     let actionBundle = NSBundle(path:getEnvironment("LB_ACTION_PATH"))
-    let maybeTemplatePath = actionBundle.pathForResource("Template", ofType:"playground")
-    if let templatePath = maybeTemplatePath {
-        if NSFileManager.defaultManager().fileExistsAtPath(templatePath) {
-            return templatePath
+    if let actionBundle = actionBundle {
+        let maybeTemplatePath = actionBundle.pathForResource("Template", ofType:"playground")
+        if let templatePath = maybeTemplatePath {
+            if NSFileManager.defaultManager().fileExistsAtPath(templatePath) {
+                return templatePath
+            }
+            NSLog("Template file doesn't exist: \(templatePath)")
+        } else {
+            NSLog("Template.playground not found in action's bundle")
         }
-        NSLog("Template file doesn't exist: \(templatePath)")
     } else {
-        NSLog("Template.playground not found in action's bundle")
+        NSLog("Unable to find actio bundle")
     }
 
     exit(1)
@@ -44,8 +48,12 @@ func getDestinationDirectory() -> String {
     }
 
     let preferences = NSDictionary(contentsOfFile:preferencesPath)
-    if let result = preferences["destinationDirectory"] as? String {
-        return result.stringByExpandingTildeInPath
+    if let preferences = preferences {
+        if let result = preferences["destinationDirectory"] as? String {
+            return result.stringByExpandingTildeInPath
+        }
+    } else {
+        NSLog("Unable to read preferences plist")
     }
 
     NSLog("Unable to get destination directory")
