@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>com.apple.dt.Xcode:playground_Icon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.duckcode.LaunchBar.action.CreateNewSwiftPlayground.iOS</string>
+	<key>CFBundleName</key>
+	<string>Create New Swift Playground (iOS)</string>
+	<key>CFBundleVersion</key>
+	<string>1.3</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2014-2015 Marco Masser</string>
+	<key>LBTextInputTitle</key>
+	<string>New Playground Name</string>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBScriptName</key>
+			<string>default.swift</string>
+			<key>LBAcceptedArgumentTypes</key>
+			<array>
+				<string>string</string>
+			</array>
+			<key>LBReturnsResult</key>
+			<true/>
+			<key>LBResultType</key>
+			<string>path</string>
+		</dict>
+	</dict>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBAuthor</key>
+		<string>Marco Masser</string>
+		<key>LBWebsite</key>
+		<string>http://www.obdev.at/</string>
+		<key>LBTwitter</key>
+		<string>@ogott</string>
+		<key>LBSummary</key>
+		<string>This action creates a new Swift Playground for iOS and opens it.
+By default, the new Playground will be created in the Documents directory, but that can be changed in the Action’s preferences file after it is run for the first time.</string>
+		<key>LBRequirements</key>
+		<string>This action is written in Swift 1 and therefore requires Xcode 6.4.</string>
+		<key>LBArgument</key>
+		<string>The name for the new Playground. If omitted, a timestamped name will be used.</string>
+		<key>LBResult</key>
+		<string>If ⇧ is held down, selects the new Playground in LaunchBar. Otherwise, the new Playground is opened and nothing is returned.</string>
+	</dict>
+</dict>
+</plist>
