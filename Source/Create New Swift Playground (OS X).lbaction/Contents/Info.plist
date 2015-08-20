@@ -7,11 +7,11 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.duckcode.LaunchBar.action.CreateNewSwiftPlayground</string>
 	<key>CFBundleName</key>
-	<string>Create New Swift Playground</string>
+	<string>Create New Swift Playground (OS X)</string>
 	<key>CFBundleVersion</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 Marco Masser</string>
+	<string>Copyright © 2014-2015 Marco Masser</string>
 	<key>LBTextInputTitle</key>
 	<string>New Playground Name</string>
 	<key>LBScripts</key>
@@ -39,10 +39,10 @@
 		<key>LBTwitter</key>
 		<string>@ogott</string>
 		<key>LBSummary</key>
-		<string>This action creates a new Swift Playground and opens it.
+		<string>This action creates a new Swift Playground for OS X and opens it.
 By default, the new Playground will be created in the Documents directory, but that can be changed in the Action’s preferences file after it is run for the first time.</string>
 		<key>LBRequirements</key>
-		<string>This action is written in Swift and therefore requires an Xcode version that includes Swift to run.</string>
+		<string>This action is written in Swift 1 and therefore requires Xcode 6.4.</string>
 		<key>LBArgument</key>
 		<string>The name for the new Playground. If omitted, a timestamped name will be used.</string>
 		<key>LBResult</key>
