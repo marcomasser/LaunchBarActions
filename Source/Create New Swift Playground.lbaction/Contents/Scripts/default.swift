@@ -31,7 +31,7 @@ func getTemplatePath() -> String {
             NSLog("Template.playground not found in action's bundle")
         }
     } else {
-        NSLog("Unable to find actio bundle")
+        NSLog("Unable to find action bundle")
     }
 
     exit(1)
