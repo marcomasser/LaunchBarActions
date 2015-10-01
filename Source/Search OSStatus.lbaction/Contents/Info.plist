@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/AlertStopIcon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.duckcode.LaunchBar.action.SearchOSStatus</string>
+	<key>CFBundleName</key>
+	<string>Search OSStatus</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LBAbbreviation</key>
+	<string>err</string>
+	<key>LBArgument</key>
+	<string>An error name, code (integer, OSType, hex, or string), framework name, or header file</string>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBArgument</key>
+		<string>An error name, code (integer, OSType, hex, or string), framework name, or header file</string>
+		<key>LBAuthor</key>
+		<string>Marco Masser</string>
+		<key>LBEmail</key>
+		<string>marco@duckcode.com</string>
+		<key>LBRequirements</key>
+		<string>Requires an internet connection. If Xcode is installed (as /Applications/Xcode.app or /Applications/Xcode-beta.app), the result items contain a reference to the header file that defines the error in the respective SDK.</string>
+		<key>LBResult</key>
+		<string>A list of matching errors.</string>
+		<key>LBSummary</key>
+		<string>Look up Apple API errors fast! Powered by osstatus.com</string>
+		<key>LBTwitter</key>
+		<string>@ogott</string>
+		<key>LBWebsite</key>
+		<string>https://github.com/marcomasser/LaunchBarActions</string>
+	</dict>
+	<key>LBRequirements</key>
+	<string>Requires an internet connection. If Xcode is installed (as /Applications/Xcode.app or /Applications/Xcode-beta.app), the result items contain a reference to the header file that defines the error in the respective SDK.</string>
+	<key>LBResult</key>
+	<string>A list of matching errors.</string>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBAcceptedArgumentTypes</key>
+			<array>
+				<string>string</string>
+			</array>
+			<key>LBKeepWindowActive</key>
+			<true/>
+			<key>LBRequiresArgument</key>
+			<true/>
+			<key>LBResultType</key>
+			<string>unknown</string>
+			<key>LBReturnsResult</key>
+			<true/>
+			<key>LBScriptName</key>
+			<string>default.js</string>
+		</dict>
+	</dict>
+	<key>LBTextInputTitle</key>
+	<string>Error name or code, framework, or header</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2015 Marco Masser, osstatus.com by Seth Willits (@sethwillits)</string>
+</dict>
+</plist>
