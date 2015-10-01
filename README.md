@@ -1,6 +1,13 @@
 LaunchBar Actions
 =================
 
+# Search OSStatus
+
+This action uses [osstatus.com](http://www.osstatus.com) to look up information about error codes on Apple’s platforms. This is useful if you’re a developer who wants to look up some error code or constant but you don’t know in which framework or in which header it is defined.
+
+As a bonus, if you have Xcode installed (either as /Applications/Xcode.app or /Applications/Xcode-beta.app), the search results let you browse the related frameworks and header files directly in the respective SDK.
+
+
 # Create New Swift Playground
 
 Oftentimes, I just want to try something out in a clean Playground, but switching to Xcode, creating a new Playground and (most importantly) then deciding how to name it and where to save it is just no fun for me.
