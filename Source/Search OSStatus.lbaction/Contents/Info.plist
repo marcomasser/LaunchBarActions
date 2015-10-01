@@ -30,8 +30,14 @@
 		<string>Look up Apple API errors fast! Powered by osstatus.com</string>
 		<key>LBTwitter</key>
 		<string>@ogott</string>
-		<key>LBWebsite</key>
+		<key>LBWebsiteURL</key>
 		<string>https://github.com/marcomasser/LaunchBarActions</string>
+		<key>LBUpdateURL</key>
+		<string>https://github.com/marcomasser/LaunchBarActions/raw/master/Source/Search%20OSStatus.lbaction/Contents/Info.plist</string>
+		<key>LBDownloadURL</key>
+		<string>https://github.com/marcomasser/LaunchBarActions/raw/master/Signed%20Actions/Search%20OSStatus.lbaction</string>
+		<key>LBChangelog</key>
+		<string>1.0: Initial Release</string>
 	</dict>
 	<key>LBRequirements</key>
 	<string>Requires an internet connection. If Xcode is installed (as /Applications/Xcode.app or /Applications/Xcode-beta.app), the result items contain a reference to the header file that defines the error in the respective SDK.</string>
