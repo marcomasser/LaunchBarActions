@@ -21,7 +21,7 @@
 		<key>LBEmail</key>
 		<string>marco@duckcode.com</string>
 		<key>LBRequirements</key>
-		<string>Uses “xcrun swift-demangle” and therefore requires xcrun to point to a Swift-compatible version of Xcode</string>
+		<string>xcrun must point to a Swift-compatible version of Xcode.</string>
 		<key>LBResult</key>
 		<string>A demangled Swift symbol name.</string>
 		<key>LBSummary</key>
@@ -35,8 +35,7 @@
 		<key>LBDownloadURL</key>
 		<string>https://github.com/marcomasser/LaunchBarActions/raw/master/Signed%20Actions/Swift%20Demangle.lbaction</string>
 		<key>LBChangelog</key>
-		<string>1.0: Initial Release.
-1.0.1: Fixed paths for tvOS SDK.</string>
+		<string>1.0: Initial Release.</string>
 	</dict>
 	<key>LBRequiredApplication</key>
 	<string>com.apple.dt.Xcode</string>
