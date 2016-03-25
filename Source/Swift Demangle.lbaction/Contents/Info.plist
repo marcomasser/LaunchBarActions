@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>Swift Logo.pdf</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.duckcode.LaunchBar.action.SwiftDemangle</string>
+	<key>CFBundleName</key>
+	<string>Swift Demangle</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LBArgument</key>
+	<string>A mangled Swift symbol name.</string>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBArgument</key>
+		<string>A mangled Swift symbol name.</string>
+		<key>LBAuthor</key>
+		<string>Marco Masser</string>
+		<key>LBEmail</key>
+		<string>marco@duckcode.com</string>
+		<key>LBRequirements</key>
+		<string>Uses “xcrun swift-demangle” and therefore requires xcrun to point to a Swift-compatible version of Xcode</string>
+		<key>LBResult</key>
+		<string>A demangled Swift symbol name.</string>
+		<key>LBTwitter</key>
+		<string>@ogott</string>
+		<key>LBWebsiteURL</key>
+		<string>https://github.com/marcomasser/LaunchBarActions</string>
+	</dict>
+	<key>LBRequiredApplication</key>
+	<string>com.apple.dt.Xcode</string>
+	<key>LBRequirements</key>
+	<string>Uses “xcrun swift-demangle” and therefore requires xcrun to point to a Swift-compatible version of Xcode.</string>
+	<key>LBResult</key>
+	<string>A demangled Swift symbol name.</string>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBAcceptedArgumentTypes</key>
+			<array>
+				<string>string</string>
+			</array>
+			<key>LBKeepWindowActive</key>
+			<true/>
+			<key>LBRequiresArgument</key>
+			<true/>
+			<key>LBResultType</key>
+			<string>string</string>
+			<key>LBReturnsResult</key>
+			<true/>
+			<key>LBScriptName</key>
+			<string>default.sh</string>
+		</dict>
+	</dict>
+	<key>LBTextInputTitle</key>
+	<string>Mangled Name</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2016 Marco Masser, Swift and the Swift logo are trademarks of Apple Inc.</string>
+</dict>
+</plist>
