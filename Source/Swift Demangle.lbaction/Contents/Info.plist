@@ -24,10 +24,19 @@
 		<string>Uses “xcrun swift-demangle” and therefore requires xcrun to point to a Swift-compatible version of Xcode</string>
 		<key>LBResult</key>
 		<string>A demangled Swift symbol name.</string>
+		<key>LBSummary</key>
+		<string>Uses “xcrun swift-demangle” to convert a mangled Swift symbol name to a human-readable Swift symbol name. Handy for quickly selecting some mangled symbol and sending it to LaunchBar via Instant Send, then demangling the symbol.</string>
 		<key>LBTwitter</key>
 		<string>@ogott</string>
 		<key>LBWebsiteURL</key>
 		<string>https://github.com/marcomasser/LaunchBarActions</string>
+		<key>LBUpdateURL</key>
+		<string>https://github.com/marcomasser/LaunchBarActions/raw/master/Source/Swift%20Demangle.lbaction/Contents/Info.plist</string>
+		<key>LBDownloadURL</key>
+		<string>https://github.com/marcomasser/LaunchBarActions/raw/master/Signed%20Actions/Swift%20Demangle.lbaction</string>
+		<key>LBChangelog</key>
+		<string>1.0: Initial Release.
+1.0.1: Fixed paths for tvOS SDK.</string>
 	</dict>
 	<key>LBRequiredApplication</key>
 	<string>com.apple.dt.Xcode</string>
