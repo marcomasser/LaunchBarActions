@@ -20,3 +20,7 @@ It’s written in Swift 1, so Xcode 6.4 is required.
 # Swift Demangle
 
 Uses “xcrun swift-demangle” to convert a mangled Swift symbol name to a human-readable Swift symbol name. Handy for quickly selecting some mangled symbol and sending it to LaunchBar via Instant Send, then demangling the symbol.
+
+Here’s a mangled name for you to try: __TFCCC4test1a1b1c1dfS2_FTS0_1xS1_1vFT1xSi_Si_OVS_1e1f
+
+For more information, read Mike Ash’s post on [Swift Name Mangling](https://mikeash.com/pyblog/friday-qa-2014-08-15-swift-name-mangling.html).
