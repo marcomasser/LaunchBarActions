@@ -14,7 +14,7 @@ Oftentimes, I just want to try something out in a clean Playground, but switchin
 
 That’s why I wrote a LaunchBar Action that just creates a new Playground and opens it right away. You can optionally enter a name for the Playground, but you don’t have to (a timestamped name is used by default).
 
-It’s written in Swift 1, so Xcode 6.4 is required.
+It’s written in Swift 2.2, so Xcode 7.3 is required.
 
 
 # Swift Demangle
