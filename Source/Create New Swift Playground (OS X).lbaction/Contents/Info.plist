@@ -9,7 +9,7 @@
 	<key>CFBundleName</key>
 	<string>Create New Swift Playground (OS X)</string>
 	<key>CFBundleVersion</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2014-2016 Marco Masser</string>
 	<key>LBTextInputTitle</key>
@@ -53,7 +53,8 @@ By default, the new Playground will be created in the Documents directory, but t
 		<string>https://github.com/marcomasser/LaunchBarActions/raw/master/Source/Create%20New%20Swift%20Playground%20(OS%20X).lbaction/Contents/Info.plist</string>
 		<key>LBChangelog</key>
 		<string>Version 1.4: Added support for updating the Action.
-Version 1.5: Updated to Swift 2.2.</string>
+Version 1.5: Updated to Swift 2.2.
+Version 1.6: Updated Playground template files.</string>
 	</dict>
 </dict>
 </plist>
